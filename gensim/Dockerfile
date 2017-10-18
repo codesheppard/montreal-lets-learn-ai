@@ -2,7 +2,7 @@ FROM continuumio/miniconda3
 
 LABEL maintainer="Nick Ma <www.github.com/nma>"
 
-RUN conda create -n gensim gensim pandas numpy matplotlib scikit-learn mpld3 python=3 jupyter notebook
+RUN conda create -n gensim gensim pandas numpy matplotlib scikit-learn mpld3 python=3.4 jupyter notebook
 
 # Default to run the DL environment if running as /bin/bash
 RUN echo "source activate gensim" >> /root/.bashrc
